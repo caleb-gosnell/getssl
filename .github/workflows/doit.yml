@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: ls -lahr
       - run: docker images
-      - run: docker build -t gha:da --target=artifact 
+      - run: docker build -t gha:da .
       - run: docker images
       - run: whoami 
       - run: docker create --name klorel gha:da
